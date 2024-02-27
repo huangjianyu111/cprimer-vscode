@@ -1,0 +1,527 @@
+	.file	"MultiBaseDerived.cpp"
+	.text
+	.section .rdata,"dr"
+_ZStL19piecewise_construct:
+	.space 1
+	.text
+	.def	_ZL6printfPKcz;	.scl	3;	.type	32;	.endef
+	.seh_proc	_ZL6printfPKcz
+_ZL6printfPKcz:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	pushq	%rbx
+	.seh_pushreg	%rbx
+	subq	$56, %rsp
+	.seh_stackalloc	56
+	leaq	128(%rsp), %rbp
+	.seh_setframe	%rbp, 128
+	.seh_endprologue
+	movq	%rcx, -48(%rbp)
+	movq	%rdx, -40(%rbp)
+	movq	%r8, -32(%rbp)
+	movq	%r9, -24(%rbp)
+	leaq	-40(%rbp), %rax
+	movq	%rax, -88(%rbp)
+	movq	-88(%rbp), %rbx
+	movl	$1, %ecx
+	movq	__imp___acrt_iob_func(%rip), %rax
+	call	*%rax
+	movq	%rbx, %r8
+	movq	-48(%rbp), %rdx
+	movq	%rax, %rcx
+	call	__mingw_vfprintf
+	movl	%eax, %ebx
+	movl	%ebx, %eax
+	addq	$56, %rsp
+	popq	%rbx
+	popq	%rbp
+	ret
+	.seh_endproc
+.lcomm _ZStL8__ioinit,1,1
+	.section .rdata,"dr"
+.LC0:
+	.ascii "virtual BaseA::vf\0"
+	.section	.text$_ZN5BaseA2vfEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN5BaseA2vfEv
+	.def	_ZN5BaseA2vfEv;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN5BaseA2vfEv
+_ZN5BaseA2vfEv:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	.LC0(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
+	movq	%rax, %rcx
+	call	_ZNSolsEPFRSoS_E
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section .rdata,"dr"
+.LC1:
+	.ascii "virtual BaseB::vg\0"
+	.section	.text$_ZN5BaseB2vgEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN5BaseB2vgEv
+	.def	_ZN5BaseB2vgEv;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN5BaseB2vgEv
+_ZN5BaseB2vgEv:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	.LC1(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
+	movq	%rax, %rcx
+	call	_ZNSolsEPFRSoS_E
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section .rdata,"dr"
+.LC2:
+	.ascii "virtual Derived::vf\0"
+	.section	.text$_ZN7Derived2vfEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN7Derived2vfEv
+	.def	_ZN7Derived2vfEv;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN7Derived2vfEv
+_ZN7Derived2vfEv:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	.LC2(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
+	movq	%rax, %rcx
+	call	_ZNSolsEPFRSoS_E
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section .rdata,"dr"
+.LC3:
+	.ascii "virtual Derived::vg\0"
+	.section	.text$_ZN7Derived2vgEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN7Derived2vgEv
+	.def	_ZN7Derived2vgEv;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN7Derived2vgEv
+_ZN7Derived2vgEv:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	.LC3(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
+	movq	%rax, %rcx
+	call	_ZNSolsEPFRSoS_E
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section	.text$_ZThn16_N7Derived2vgEv,"x"
+	.linkonce discard
+	.globl	_ZThn16_N7Derived2vgEv
+	.def	_ZThn16_N7Derived2vgEv;	.scl	2;	.type	32;	.endef
+_ZThn16_N7Derived2vgEv:
+	subq	$16, %rcx
+	jmp	_ZN7Derived2vgEv
+	.section	.text$_ZN5BaseAC2Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN5BaseAC2Ev
+	.def	_ZN5BaseAC2Ev;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN5BaseAC2Ev
+_ZN5BaseAC2Ev:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	16+_ZTV5BaseA(%rip), %rdx
+	movq	16(%rbp), %rax
+	movq	%rdx, (%rax)
+	nop
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section	.text$_ZN5BaseBC2Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN5BaseBC2Ev
+	.def	_ZN5BaseBC2Ev;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN5BaseBC2Ev
+_ZN5BaseBC2Ev:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	leaq	16+_ZTV5BaseB(%rip), %rdx
+	movq	16(%rbp), %rax
+	movq	%rdx, (%rax)
+	nop
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section	.text$_ZN7DerivedC1Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	_ZN7DerivedC1Ev
+	.def	_ZN7DerivedC1Ev;	.scl	2;	.type	32;	.endef
+	.seh_proc	_ZN7DerivedC1Ev
+_ZN7DerivedC1Ev:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movq	%rcx, 16(%rbp)
+	movq	16(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZN5BaseAC2Ev
+	movq	16(%rbp), %rax
+	addq	$16, %rax
+	movq	%rax, %rcx
+	call	_ZN5BaseBC2Ev
+	leaq	16+_ZTV7Derived(%rip), %rdx
+	movq	16(%rbp), %rax
+	movq	%rdx, (%rax)
+	leaq	48+_ZTV7Derived(%rip), %rdx
+	movq	16(%rbp), %rax
+	movq	%rdx, 16(%rax)
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	__main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+.LC4:
+	.ascii "sizeof BaseA:%d\12\0"
+.LC5:
+	.ascii "sizeof BaseB:%d\12\0"
+.LC6:
+	.ascii "sizeof Derived:%d\12\0"
+	.align 8
+.LC7:
+	.ascii "\345\257\271\350\261\241\345\234\260\345\235\200 -----------------\12\0"
+.LC8:
+	.ascii "child addr:%p \12\0"
+	.align 8
+.LC9:
+	.ascii "\346\210\220\345\221\230\345\217\230\351\207\217\345\234\260\345\235\200 -----------------\12\0"
+.LC10:
+	.ascii "base_m1 \11 addr:%p \12\0"
+.LC11:
+	.ascii "base_m2 \11 addr:%p \12\0"
+.LC12:
+	.ascii "derived_m1 \11 addr:%p \12\0"
+	.align 8
+.LC13:
+	.ascii "\346\210\220\345\221\230\345\207\275\346\225\260\345\234\260\345\235\200 -----------------\12\0"
+.LC14:
+	.ascii "BaseA vf \11 addr:%p \12\0"
+.LC15:
+	.ascii "BaseB vg \11 addr:%p \12\0"
+.LC16:
+	.ascii "Derived vf \11 addr:%p \12\0"
+.LC17:
+	.ascii "Derived vg \11 addr:%p \12\0"
+	.text
+	.globl	main
+	.def	main;	.scl	2;	.type	32;	.endef
+	.seh_proc	main
+main:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	pushq	%r15
+	.seh_pushreg	%r15
+	pushq	%r14
+	.seh_pushreg	%r14
+	pushq	%r13
+	.seh_pushreg	%r13
+	pushq	%r12
+	.seh_pushreg	%r12
+	pushq	%rsi
+	.seh_pushreg	%rsi
+	pushq	%rbx
+	.seh_pushreg	%rbx
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$96, %rsp
+	.seh_stackalloc	96
+	.seh_endprologue
+	call	__main
+	movl	$16, %edx
+	leaq	.LC4(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$16, %edx
+	leaq	.LC5(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$32, %edx
+	leaq	.LC6(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZN7DerivedC1Ev
+	leaq	.LC7(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	-32(%rbp), %rax
+	movq	%rax, %rdx
+	leaq	.LC8(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	.LC9(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	-32(%rbp), %rax
+	addq	$8, %rax
+	movq	%rax, %rdx
+	leaq	.LC10(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	-32(%rbp), %rax
+	addq	$24, %rax
+	movq	%rax, %rdx
+	leaq	.LC11(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	-32(%rbp), %rax
+	addq	$28, %rax
+	movq	%rax, %rdx
+	leaq	.LC12(%rip), %rcx
+	call	_ZL6printfPKcz
+	leaq	.LC13(%rip), %rcx
+	call	_ZL6printfPKcz
+	movq	$1, -64(%rbp)
+	movq	$0, -56(%rbp)
+	movdqa	-64(%rbp), %xmm0
+	movaps	%xmm0, -48(%rbp)
+	leaq	-48(%rbp), %rax
+	movq	%rax, %rdx
+	leaq	.LC14(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$1, %r14d
+	movl	$0, %r15d
+	movq	%r14, -48(%rbp)
+	movq	%r15, -40(%rbp)
+	leaq	-48(%rbp), %rax
+	movq	%rax, %rdx
+	leaq	.LC15(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$1, %r12d
+	movl	$0, %r13d
+	movq	%r12, -48(%rbp)
+	movq	%r13, -40(%rbp)
+	leaq	-48(%rbp), %rax
+	movq	%rax, %rdx
+	leaq	.LC16(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$9, %ebx
+	movl	$0, %esi
+	movq	%rbx, -48(%rbp)
+	movq	%rsi, -40(%rbp)
+	leaq	-48(%rbp), %rax
+	movq	%rax, %rdx
+	leaq	.LC17(%rip), %rcx
+	call	_ZL6printfPKcz
+	movl	$0, %eax
+	addq	$96, %rsp
+	popq	%rbx
+	popq	%rsi
+	popq	%r12
+	popq	%r13
+	popq	%r14
+	popq	%r15
+	popq	%rbp
+	ret
+	.seh_endproc
+	.globl	_ZTV7Derived
+	.section	.rdata$_ZTV7Derived,"dr"
+	.linkonce same_size
+	.align 8
+_ZTV7Derived:
+	.quad	0
+	.quad	_ZTI7Derived
+	.quad	_ZN7Derived2vfEv
+	.quad	_ZN7Derived2vgEv
+	.quad	-16
+	.quad	_ZTI7Derived
+	.quad	_ZThn16_N7Derived2vgEv
+	.globl	_ZTV5BaseB
+	.section	.rdata$_ZTV5BaseB,"dr"
+	.linkonce same_size
+	.align 8
+_ZTV5BaseB:
+	.quad	0
+	.quad	_ZTI5BaseB
+	.quad	_ZN5BaseB2vgEv
+	.globl	_ZTV5BaseA
+	.section	.rdata$_ZTV5BaseA,"dr"
+	.linkonce same_size
+	.align 8
+_ZTV5BaseA:
+	.quad	0
+	.quad	_ZTI5BaseA
+	.quad	_ZN5BaseA2vfEv
+	.globl	_ZTI7Derived
+	.section	.rdata$_ZTI7Derived,"dr"
+	.linkonce same_size
+	.align 8
+_ZTI7Derived:
+	.quad	_ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	_ZTS7Derived
+	.long	0
+	.long	2
+	.quad	_ZTI5BaseA
+	.quad	2
+	.quad	_ZTI5BaseB
+	.quad	4098
+	.globl	_ZTS7Derived
+	.section	.rdata$_ZTS7Derived,"dr"
+	.linkonce same_size
+	.align 8
+_ZTS7Derived:
+	.ascii "7Derived\0"
+	.globl	_ZTI5BaseB
+	.section	.rdata$_ZTI5BaseB,"dr"
+	.linkonce same_size
+	.align 8
+_ZTI5BaseB:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTS5BaseB
+	.globl	_ZTS5BaseB
+	.section	.rdata$_ZTS5BaseB,"dr"
+	.linkonce same_size
+_ZTS5BaseB:
+	.ascii "5BaseB\0"
+	.globl	_ZTI5BaseA
+	.section	.rdata$_ZTI5BaseA,"dr"
+	.linkonce same_size
+	.align 8
+_ZTI5BaseA:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTS5BaseA
+	.globl	_ZTS5BaseA
+	.section	.rdata$_ZTS5BaseA,"dr"
+	.linkonce same_size
+_ZTS5BaseA:
+	.ascii "5BaseA\0"
+	.text
+	.def	__tcf_0;	.scl	3;	.type	32;	.endef
+	.seh_proc	__tcf_0
+__tcf_0:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	leaq	_ZStL8__ioinit(%rip), %rcx
+	call	_ZNSt8ios_base4InitD1Ev
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	_Z41__static_initialization_and_destruction_0ii;	.scl	3;	.type	32;	.endef
+	.seh_proc	_Z41__static_initialization_and_destruction_0ii
+_Z41__static_initialization_and_destruction_0ii:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movl	%ecx, 16(%rbp)
+	movl	%edx, 24(%rbp)
+	cmpl	$1, 16(%rbp)
+	jne	.L15
+	cmpl	$65535, 24(%rbp)
+	jne	.L15
+	leaq	_ZStL8__ioinit(%rip), %rcx
+	call	_ZNSt8ios_base4InitC1Ev
+	leaq	__tcf_0(%rip), %rcx
+	call	atexit
+.L15:
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.def	_GLOBAL__sub_I_main;	.scl	3;	.type	32;	.endef
+	.seh_proc	_GLOBAL__sub_I_main
+_GLOBAL__sub_I_main:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$32, %rsp
+	.seh_stackalloc	32
+	.seh_endprologue
+	movl	$65535, %edx
+	movl	$1, %ecx
+	call	_Z41__static_initialization_and_destruction_0ii
+	nop
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.seh_endproc
+	.section	.ctors,"w"
+	.align 8
+	.quad	_GLOBAL__sub_I_main
+	.ident	"GCC: (x86_64-posix-sjlj-rev0, Built by MinGW-W64 project) 7.3.0"
+	.def	__mingw_vfprintf;	.scl	2;	.type	32;	.endef
+	.def	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;	.scl	2;	.type	32;	.endef
+	.def	_ZNSolsEPFRSoS_E;	.scl	2;	.type	32;	.endef
+	.def	_ZNSt8ios_base4InitD1Ev;	.scl	2;	.type	32;	.endef
+	.def	_ZNSt8ios_base4InitC1Ev;	.scl	2;	.type	32;	.endef
+	.def	atexit;	.scl	2;	.type	32;	.endef
+	.section	.rdata$.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, "dr"
+	.globl	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.linkonce	discard
+.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.quad	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.section	.rdata$.refptr._ZSt4cout, "dr"
+	.globl	.refptr._ZSt4cout
+	.linkonce	discard
+.refptr._ZSt4cout:
+	.quad	_ZSt4cout

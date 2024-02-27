@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "__GNUC__=6",
+        "__cdecl=__attribute__((__cdecl__))"
+      ],
+      "intelliSenseMode": "windows-gcc-x64",
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": "",
+        "path": [
+          "${workspaceRoot}",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix//mingw64/include/**",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
+          "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"
+        ]
+      },
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "compilerPath": "D:/04-software-install/mingw_64-7.3.0-release-posix/mingw64/bin/gcc.exe"
+    }
+  ],
+  "version": 4
+}

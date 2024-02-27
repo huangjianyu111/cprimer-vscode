@@ -1,0 +1,33 @@
+	.file	"demo.cpp"
+	.text
+	.def	__main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+.LC0:
+	.ascii " try to contro cpu, i = %d \12\0"
+	.text
+	.globl	main
+	.def	main;	.scl	2;	.type	32;	.endef
+	.seh_proc	main
+main:
+	pushq	%rbp
+	.seh_pushreg	%rbp
+	movq	%rsp, %rbp
+	.seh_setframe	%rbp, 0
+	subq	$48, %rsp
+	.seh_stackalloc	48
+	.seh_endprologue
+	call	__main
+	movb	$1, -5(%rbp)
+	movl	$0, -4(%rbp)
+.L3:
+	cmpb	$0, -5(%rbp)
+	je	.L3
+	addl	$1, -4(%rbp)
+	movl	-4(%rbp), %eax
+	movl	%eax, %edx
+	leaq	.LC0(%rip), %rcx
+	call	printf
+	jmp	.L3
+	.seh_endproc
+	.ident	"GCC: (x86_64-posix-sjlj-rev0, Built by MinGW-W64 project) 7.3.0"
+	.def	printf;	.scl	2;	.type	32;	.endef
